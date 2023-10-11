@@ -1,0 +1,353 @@
+/*#region all*/
+@import url('https://fonts.cdnfonts.com/css/libre-franklin');
+
+* {
+
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+h1 {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+h2 {
+    background: -webkit-linear-gradient(#666363, #EEEEEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1em;
+  }
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    line-height: 0.5em;
+}
+
+ul {
+    width: 90%;
+}
+
+hr.solid {
+    border-top: 2px solid #000000;
+    border: none;
+    background-color: #00ADB5;
+}
+
+p {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    margin-top: 30px;
+    background-color: #EEEEEE;
+ }
+
+ a {
+    color: #EEEEEE;
+ }
+
+ a.dark {
+    color: #222831;
+ }
+
+ a:hover {
+    font-weight: bold;
+ }
+
+ section {
+    height: auto !important;
+    min-height: 400px;
+    margin-bottom: 20vh;
+ }
+
+ .section-title {
+    text-align: center;
+    padding: 4vh;
+ }
+
+ .hidden {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%);
+
+ }
+
+ .hidden.show {
+    opacity: 1;
+    transform: translateX(0);
+ }
+
+
+
+/*#endregion all*/
+
+/*#region header*/
+
+.title-box {
+    min-height: 280px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.title-img {
+    min-height: 280px;
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 1s;
+    
+} 
+
+.title-img:hover {
+    opacity: 1;
+
+    animation-duration: 1s;
+}
+
+.title-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: auto;
+    min-width: 400px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #222831;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #00ADB5;
+    border-radius: 1vh;
+}
+
+.nav-box {
+    height: auto;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #00ADB5;
+    z-index: 1;
+}
+
+.nav {
+    height: auto;
+    min-height: 50px;
+    width: 100%;
+    display: flex;                  /*learnt from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #00ADB5;
+}
+
+.toggle-button {
+
+    position: absolute;
+    text-align: center;
+    left: 3rem;
+    top: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    background-color: #222831;
+    height: 5px;
+    width: 100%;
+    border-radius: 15%;
+}
+
+@media (max-width: 1000px) {                /* learnt from https://www.youtube.com/watch?v=At4B7A4GOPg */
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-btn-container {
+        display: none;
+        width: 100%;
+        
+    }
+
+    .nav-btn-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-btn {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .nav-btn-container.active {
+        height: auto;
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+
+.nav-btn {
+    height: auto;
+    padding: 10px;
+    background-color: #00ADB5;
+    border: none;
+    font-size: 18px;
+    color: #222831;
+    padding-left: 1em;
+}
+
+.nav-btn:hover {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+
+/*#endregion header*/
+
+.profile-img {
+    border-radius: 50%;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.main-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 30px;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-left: 30px auto;
+    width: 900% auto;
+    min-width: 300px;
+    padding-bottom: 2em;
+}
+
+.index {
+    margin-top: 70px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-blurb {
+        grid-column: span 8;
+        grid-row: span 2;
+        background-color: #393E46;
+        color: #EEEEEE;
+        min-width: 300px;
+}
+
+.index-img {
+    grid-column: span 1; 
+}
+
+.main-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px auto;
+    width: 90% auto;
+}
+
+.footer-container {
+    height: 50px;
+    display: flex;
+    text-align: center;
+    flex-flow: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #393E46;
+}
+
+.foot {
+    color: #000000;
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    top: 20px;
+    padding-top: 1em;
+}
+
+.structure-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 1 50%;
+    height: 700px;
+    padding: 0px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid #EEEEEE;
+    background-color: #222831;
+
+}
+
+.structure-box {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    width: 30%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.structure-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+
+}
+
+.structure {
+    margin: 10px auto;
+}
+
+.structure-text {
+    margin: 30px auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 10px
+
+}
+
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex: 1 auto;
+    max-width: 300px;
+    padding-right: 1vh;
+}
+
+

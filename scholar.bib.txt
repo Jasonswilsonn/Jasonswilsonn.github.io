@@ -1,0 +1,67 @@
+@article{pasquina2020architecture,
+  title={The architecture of the Gram-positive bacterial cell wall},
+  author={Pasquina-Lemonche, L and Burns, J and Turner, RD and Kumar, S and Tank, R and Mullin, N and Wilson, JS and Chakrabarti, B and Bullough, PA and Foster, SJ and others},
+  journal={Nature},
+  volume={582},
+  number={7811},
+  pages={294--297},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
+
+@article{lanzoni2022structure,
+  title={Structure and assembly of the S-layer in C. difficile},
+  author={Lanzoni-Mangutchi, Paola and Banerji, Oishik and Wilson, Jason and Barwinska-Sendra, Anna and Kirk, Joseph A and Vaz, Filipa and O’Beirne, Shauna and Basl{\'e}, Arnaud and El Omari, Kamel and Wagner, Armin and others},
+  journal={Nature communications},
+  volume={13},
+  number={1},
+  pages={1--13},
+  year={2022},
+  publisher={Nature Publishing Group}
+}
+
+@article{wilson2019identification,
+  title={Identification and structural analysis of the tripartite $\alpha$-pore forming toxin of Aeromonas hydrophila},
+  author={Wilson, Jason S and Churchill-Angus, Alicia M and Davies, Simon P and Sedelnikova, Svetlana E and Tzokov, Svetomir B and Rafferty, John B and Bullough, Per A and Bisson, Claudine and Baker, Patrick J},
+  journal={Nature communications},
+  volume={10},
+  number={1},
+  pages={1--17},
+  year={2019},
+  publisher={Nature Publishing Group}
+}
+
+@article{churchill2021characterisation,
+  title={Characterisation of a tripartite $\alpha$-pore forming toxin from Serratia marcescens},
+  author={Churchill-Angus, Alicia M and Schofield, Thomas HB and Marlow, Thomas R and Sedelnikova, Svetlana E and Wilson, Jason S and Rafferty, John B and Baker, Patrick J},
+  journal={Scientific reports},
+  volume={11},
+  number={1},
+  pages={1--15},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+@phdthesis{wilson2016structural,
+  title={Structural and functional studies of the AHL tripartite pore forming toxin proteins from Aeromonas hydrophila},
+  author={Wilson, Jason},
+  year={2016},
+  school={University of Sheffield}
+}
+
+@article{banerji2020structure,
+  title={Structure and assembly of the S-layer determine virulence in C. difficile},
+  author={Banerji, Oishik and Lanzoni-Mangutchi, Paola and Vaz, Filipa and Barwinska-Sendra, Anna and Wilson, Jason and Kirk, Joseph and O'Beirne, Shauna and Basle, Arnaud and El Omari, Kamel and Wagner, Armin and others},
+  journal={In Review},
+  year={2020},
+  publisher={Research Square}
+}
+
+@article{wilson2023molecular,
+  title={Molecular mechanism of bacteriophage tail contraction-structure of an S-layer-penetrating bacteriophage},
+  author={Wilson, Jason S and Fortier, Louis-Charles and Fagan, Robert P and Bullough, Per A},
+  journal={bioRxiv},
+  pages={2023--08},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
