@@ -353,20 +353,36 @@ body {
 
 
 .gridbox {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .box1, .box2 {
-    grid-column: span 5;
-    grid-row: span 20;
+    width: 300px;
     padding-bottom: 50px;
+
 }
 
 .box3 {
-    grid-column: span 10;
-    grid-row: span 20;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.social-buttons {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social { 
+    padding: 0.1vw;
+    width: 50px;
 }
