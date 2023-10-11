@@ -72,7 +72,7 @@ body {
 
  .section-title {
     text-align: center;
-    padding: 4vh;
+    padding: 8vh;
  }
 
  .hidden {
@@ -352,3 +352,21 @@ body {
 }
 
 
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.box1, .box2 {
+    grid-column: span 5;
+    grid-row: span 20;
+    padding-bottom: 50px;
+}
+
+.box3 {
+    grid-column: span 10;
+    grid-row: span 20;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
