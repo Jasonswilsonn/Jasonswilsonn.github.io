@@ -69,7 +69,6 @@ body {
     height: auto !important;
     min-height: 400px;
     margin-bottom: 20vh;
-    scroll-snap-align: center;
  }
 
  .section-title {
@@ -89,9 +88,9 @@ body {
     transform: translateX(0);
  }
 
- .scroll-container {
-    scroll-snap-type: y mandatory;
-  }
+ html {
+    scroll-behavior: smooth;
+ }
 
 /*#endregion all*/
 
@@ -346,13 +345,36 @@ body {
 }
 
 
-.tweet {
+.tweet, .news-box {
     display: flex;
     flex-direction: column;
     width: auto;
     flex: 1 auto;
     max-width: 300px;
     padding-right: 1vh;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.news-img img {
+    height: 100px;
+    width: 100px;
+}
+
+.news-item {
+    border: 0.01em solid #00000025;
+    border-radius: 8px/8px;
+    margin-top: 10px;
+    min-width: 300px;
+    background-color: white;
+}
+
+.news-item p {
+    padding: 1em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+
 }
 
 
