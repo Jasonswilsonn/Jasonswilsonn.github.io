@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-    line-height: 0.5em;
+    line-height: 1em;
 }
 
 ul {
@@ -241,7 +241,7 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 4em;
     padding-right: 4em;
     margin-left: 30px auto;
@@ -276,7 +276,17 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-left: 30px auto;
+    width: 90% auto;
+}
+
+.main-content-container:has(.structure-container) {
+    display: flex;
+    gap: 1em;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 0px;
     margin-left: 30px auto;
     width: 90% auto;
 }
@@ -302,34 +312,28 @@ body {
 }
 
 .structure-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    flex: 1 50%;
-    height: 700px;
+    height: auto;
+    width: auto;
+    flex: 1;
     padding: 0px;
-    width: 90%;
     text-align: center;
     position: relative;
     margin: 0 auto;
-    border: 3px solid #EEEEEE;
-    background-color: #222831;
-
 }
 
 .structure-box {
     display: flex;
     flex-flow: row wrap;
+    min-width: 500px;
     flex: 1;
-    width: 30%;
     margin: 10px auto;
-    border: 1px solid black;
+    border: 1px solid #00000050;
+    border-radius: 8px/8px;
 }
 
 .structure-title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
-
 }
 
 .structure {
