@@ -135,7 +135,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 4px solid #00ADB5;
+    border: 4px solid #00ADB550;
     border-radius: 1vh;
 }
 
@@ -161,7 +161,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    background-color: #00ADB5;
+    background-color: #00ADB500;
 }
 
 .toggle-button {
@@ -192,7 +192,12 @@ body {
     .nav-btn-container {
         display: none;
         width: 100%;
+    
         
+    }
+
+    .nav-box {
+        background-color: #00ADB5;
     }
 
     .nav-btn-container {
@@ -217,7 +222,7 @@ body {
 .nav-btn {
     height: auto;
     padding: 10px;
-    background-color: #00ADB5;
+    background-color: #00ADB500;
     border: none;
     font-size: 18px;
     color: #222831;
@@ -225,17 +230,13 @@ body {
 }
 
 .nav-btn:hover {
-    background-color: #00ADB5;
+    background-color: #00ADB500;
     color: #EEEEEE;
 }
 
 /*#endregion header*/
 
-.profile-img {
-    border-radius: 50%;
-    height: 300px;
-    padding-top: 20px;
-}
+/*#region body */
 
 .main-text-container {
     display: flex;
@@ -248,6 +249,24 @@ body {
     width: 900% auto;
     min-width: 300px;
     padding-bottom: 2em;
+}
+
+.main-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 30px auto;
+    width: 90% auto;
+}
+
+/*#endregion body */
+
+/*#region home*/
+.profile-img {
+    border-radius: 50%;
+    height: 300px;
+    padding-top: 20px;
 }
 
 .index {
@@ -272,24 +291,9 @@ body {
     grid-column: span 1; 
 }
 
-.main-content-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: 30px auto;
-    width: 90% auto;
-}
+/*#endregion home*/
 
-.main-content-container:has(.structure-container) {
-    display: flex;
-    gap: 1em;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: 30px auto;
-    width: 90% auto;
-}
+/*#region foot */
 
 .footer-container {
     height: 50px;
@@ -309,6 +313,20 @@ body {
     width: 100%;
     top: 20px;
     padding-top: 1em;
+}
+
+/*#endregion footer */
+
+/*#region structures*/
+
+.main-content-container:has(.structure-container) {
+    display: flex;
+    gap: 1em;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 30px auto;
+    width: 90% auto;
 }
 
 .structure-container {
@@ -348,6 +366,9 @@ body {
 
 }
 
+/*#endregion structures*/
+
+/*#region news */
 
 .tweet, .news-box {
     display: flex;
@@ -381,7 +402,6 @@ body {
 
 }
 
-
 .gridbox {
     display: flex;
     flex-direction: row;
@@ -405,6 +425,10 @@ body {
 
 }
 
+/*#endregion news*/
+
+/*#region contact*/
+
 .social-buttons {
     width: 300px;
     display: flex;
@@ -423,3 +447,5 @@ body {
 .social:hover {
     opacity: 0.7;
 }
+
+/*#endregion contact */
