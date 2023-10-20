@@ -135,7 +135,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 4px solid #00ADB550;
+    border: 4px solid #EEEEEE50;
     border-radius: 1vh;
 }
 
@@ -148,7 +148,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: #00ADB5;
+    background-color: #222831;
     z-index: 1;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .toggle-button .bar {
-    background-color: #222831;
+    background-color: #EEEEEE;
     height: 5px;
     width: 100%;
     border-radius: 15%;
@@ -197,7 +197,7 @@ body {
     }
 
     .nav-box {
-        background-color: #00ADB5;
+        background-color: #222831;
     }
 
     .nav-btn-container {
@@ -225,13 +225,13 @@ body {
     background-color: #00ADB500;
     border: none;
     font-size: 18px;
-    color: #222831;
+    color: #EEEEEE;
     padding-left: 1em;
 }
 
 .nav-btn:hover {
     background-color: #00ADB500;
-    color: #EEEEEE;
+    color: #00ADB5;
 }
 
 /*#endregion header*/
@@ -347,6 +347,7 @@ body {
     margin: 10px auto;
     border: 1px solid #00000050;
     border-radius: 8px/8px;
+    box-shadow: 5px 10px #00000025;
 }
 
 .structure-title {
@@ -376,10 +377,15 @@ body {
     width: auto;
     flex: 1 auto;
     max-width: 300px;
-    padding-right: 1vh;
     height: auto;
     margin-right: 30px;
     margin-top: 10px;
+    border-radius: 8px/8px;   
+}
+
+.twitter-tweet {
+    border-radius: 8px/8px;
+    box-shadow: 5px 10px #00000025;
 }
 
 .news-img img {
@@ -388,11 +394,12 @@ body {
 }
 
 .news-item {
-    border: 0.01em solid #00000025;
+    border: 0.015em solid #00000020;
     border-radius: 8px/8px;
     margin-top: 10px;
     min-width: 300px;
     background-color: white;
+    box-shadow: 5px 10px #00000025;
 }
 
 .news-item p {
